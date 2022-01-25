@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Proceso">
+  <ClassDiagramComponents>
+    <Class name="Proceso" package="Inicio" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="a" type="ArrayList&lt;Object&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Object&gt;" name="a"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="agregarRegistro" returnType="void" visibility="public">
+          <Argument type="Producto" name="p"/>
+        </Method>
+        <Method name="modificarRegistro" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+          <Argument type="Producto" name="p"/>
+        </Method>
+        <Method name="eliminarRegistro" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="obtenerRegistro" returnType="Producto" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="cantidadRegistro" returnType="int" visibility="public"/>
+        <Method name="buscaCodigo" returnType="int" visibility="public">
+          <Argument type="int" name="codigo"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

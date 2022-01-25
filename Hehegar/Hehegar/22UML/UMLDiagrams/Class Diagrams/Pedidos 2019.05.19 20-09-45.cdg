@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Pedidos">
+  <ClassDiagramComponents>
+    <Class name="Archivos" package="" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="archivo" type="File" visibility="package"/>
+        <Field name="nombre" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Cargar" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Auto" package="" visibility="public" isAbstract="true" xPosition="275.0" yPosition="160.0">
+      <Fields>
+        <Field name="pasajeros" type="int" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="numSerieMotor"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="pasajeros"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="AutoCompacto" package="" visibility="public" xPosition="275.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="numSerieMotor"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="pasajeros"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="verDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Beetle" package="" visibility="public" xPosition="832.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="numSerieMotor"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="pasajeros"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="verDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Camioneta" package="" visibility="public" xPosition="832.0" yPosition="160.0">
+      <Fields>
+        <Field name="capacidadCarga" type="int" visibility="public"/>
+        <Field name="cantidadEjes" type="int" visibility="public"/>
+        <Field name="cantidadRodadas" type="int" visibility="public"/>
+        <Field name="pasajeros" type="int" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="capacidadCarga"/>
+          <Argument type="int" name="cantidadEjes"/>
+          <Argument type="int" name="cantidadRodadas"/>
+          <Argument type="int" name="pasajeros"/>
+          <Argument type="int" name="numSerieMotor"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="double" name="precio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="verDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ferrari" package="" visibility="public" xPosition="1313.0" yPosition="30.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="numSerieMotor"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="pasajeros"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="verDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="InterfaceCarroMenu" package="" visibility="public" xPosition="1377.0" yPosition="401.0">
+      <Fields>
+        <Field name="bin_list" type="File" visibility="package" isStatic="true"/>
+        <Field name="rd" type="FileInputStream" visibility="package" isStatic="true"/>
+        <Field name="obj" type="ObjectInputStream" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MINICopper" package="" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="numSerieMotor"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="pasajeros"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="verDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Tesla" package="" visibility="public" xPosition="30.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="numSerieMotor"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="pasajeros"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="verDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Vagoneta" package="" visibility="public" xPosition="289.0" yPosition="357.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="numSerieMotor"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="pasajeros"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="verDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Vehiculo" package="" visibility="public" isAbstract="true" xPosition="865.0" yPosition="373.0">
+      <Fields>
+        <Field name="numSerieMotor" type="int" visibility="public"/>
+        <Field name="year" type="int" visibility="public"/>
+        <Field name="marca" type="String" visibility="public"/>
+        <Field name="precio" type="double" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="numSerieMotor"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="double" name="precio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="verDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Pasajeros" package="" visibility="public" xPosition="30.0" yPosition="217.0">
+      <Methods>
+        <Method name="getCantidadPasajeros" returnType="int" visibility="package"/>
+        <Method name="setCantidadPasajeros" returnType="void" visibility="package">
+          <Argument type="int" name="n"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Beetle" target="Auto"/>
+    <IsRelation name="is" source="MINICopper" target="Auto"/>
+    <IsRelation name="is" source="Tesla" target="Auto"/>
+    <IsRelation name="is" source="Camioneta" target="Vehiculo"/>
+    <IsRelation name="is" source="Ferrari" target="Auto"/>
+    <IsRelation name="is" source="AutoCompacto" target="Auto"/>
+    <IsRelation name="is" source="Vagoneta" target="Auto"/>
+    <IsRelation name="is" source="Auto" target="Vehiculo"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

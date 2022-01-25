@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Producto">
+  <ClassDiagramComponents>
+    <Class name="Producto" package="Inicio" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="codigo" type="int" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="telefono" type="int" visibility="private"/>
+        <Field name="direccion" type="Object" visibility="private"/>
+        <Field name="foto" type="byte[]" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="piel" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="codigo"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="telefono"/>
+          <Argument type="Object" name="direccion"/>
+          <Argument type="byte[]" name="foto"/>
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="piel"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCodigo" returnType="int" visibility="public"/>
+        <Method name="setCodigo" returnType="void" visibility="public">
+          <Argument type="int" name="codigo"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getTelefono" returnType="int" visibility="public"/>
+        <Method name="setTelefono" returnType="void" visibility="public">
+          <Argument type="int" name="telefono"/>
+        </Method>
+        <Method name="getDireccion" returnType="Object" visibility="public"/>
+        <Method name="setDireccion" returnType="void" visibility="public">
+          <Argument type="Object" name="direccion"/>
+        </Method>
+        <Method name="getFoto" returnType="byte[]" visibility="public"/>
+        <Method name="setFoto" returnType="void" visibility="public">
+          <Argument type="byte[]" name="foto"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getPiel" returnType="String" visibility="public"/>
+        <Method name="setPiel" returnType="void" visibility="public">
+          <Argument type="String" name="piel"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

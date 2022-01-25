@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Otros">
+  <ClassDiagramComponents>
+    <Class name="imgTabla" package="Otros" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getTableCellRendererComponent" returnType="Component" visibility="public">
+          <Argument type="JTable" name="table"/>
+          <Argument type="Object" name="value"/>
+          <Argument type="boolean" name="isSelected"/>
+          <Argument type="boolean" name="hasFocus"/>
+          <Argument type="int" name="row"/>
+          <Argument type="int" name="column"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Limpiar_txt" package="Otros" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="limpiar_texto" returnType="void" visibility="public">
+          <Argument type="JPanel" name="panel"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

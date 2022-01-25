@@ -1,0 +1,15 @@
+(Algoritmo para leer un archivo en Java)
+1.-Declarar una variable de tipo File.
+2.-Declarar una variable de tipo FileReader.
+3.-Declarar una variable de tipo String.
+4.-Preparar el archivo.
+5.-Crear una instancia de tipo FileReader(lector).
+6.-Crear una instancia de tipo BufferedReader.
+7.-Inicializar la variable de tipo cadena a nada.
+8.-Crear un ciclo que se repita mientras la variable de tipo cadena sea diferente
+   de nula.
+   8.1-Asignar a la variable de tipo cadena buffer.readLine().
+   8.2-Si la variable de tipo cadena es diferente de nulo.
+   mostrar su contenido.
+9.-Cerrar el buffer.
+10.-Cerrar el lector.

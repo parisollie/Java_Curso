@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="VentanaTabla">
+  <ClassDiagramComponents>
+    <Class name="VentanaTabla" package="" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="lt" type="Limpiar_txt" visibility="package"/>
+        <Field name="ruta_txt" type="String" visibility="private"/>
+        <Field name="p" type="Producto" visibility="package"/>
+        <Field name="rp" type="Proceso" visibility="package"/>
+        <Field name="clic_tabla" type="int" visibility="package"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton4" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton5" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton6" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton7" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jCheckBox1" type="javax.swing.JCheckBox" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lblFoto" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="panel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="tabla" type="javax.swing.JTable" visibility="private"/>
+        <Field name="txtCodigo" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtColor" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtDireccion" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtNombre" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtPiel" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtRuta" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtTelefono" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cargar_txt" returnType="void" visibility="public"/>
+        <Method name="grabar_txt" returnType="void" visibility="public"/>
+        <Method name="ingresarRegistro" returnType="void" visibility="public">
+          <Argument type="File" name="ruta"/>
+        </Method>
+        <Method name="modificarRegistro" returnType="void" visibility="public">
+          <Argument type="File" name="ruta"/>
+        </Method>
+        <Method name="eliminarRegistro" returnType="void" visibility="public"/>
+        <Method name="listarRegistro" returnType="void" visibility="public"/>
+        <Method name="leerCodigo" returnType="int" visibility="public"/>
+        <Method name="leerNombre" returnType="String" visibility="public"/>
+        <Method name="leerTelefono" returnType="int" visibility="public"/>
+        <Method name="leerDireccion" returnType="Object" visibility="public"/>
+        <Method name="leerColor" returnType="String" visibility="public"/>
+        <Method name="leerPiel" returnType="String" visibility="public"/>
+        <Method name="leerFoto" returnType="byte[]" visibility="public">
+          <Argument type="File" name="ruta"/>
+        </Method>
+        <Method name="leerFoto2" returnType="byte[]" visibility="public">
+          <Argument type="int" name="codigo"/>
+        </Method>
+        <Method name="mensaje" returnType="void" visibility="public">
+          <Argument type="String" name="texto"/>
+        </Method>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tablaMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jButton5ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="txtDireccionActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="txtTelefonoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="txtCodigoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton6MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="txtNombreActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="txtColorActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="txtPielActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton7MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
