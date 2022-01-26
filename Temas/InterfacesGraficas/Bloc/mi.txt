@@ -1,0 +1,4 @@
+1,  Azucar, 5.0,  rubia
+2,   Leche, 5.0,   Nuez
+3, , 4.0, e
+8, g, 0.0, 
