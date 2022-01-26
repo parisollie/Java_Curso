@@ -1,0 +1,12 @@
+
+DANY,21,daniela@gmail.com,chiripa,2.0,0,120.0,2.0
+
+
+
+
+profe,20,profe@gmail.com,profe,2.0,0,250.0,2.0
+
+
+
+
+Julian,Edad,ej_juego@gmail.com,jPasswordField1,0,0,0,0
