@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Practica5vers2">
+  <ClassDiagramComponents>
+    <Class name="Directivo" package="altos" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="salarioAdicional" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Nombre"/>
+          <Argument type="String" name="Apellido"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setSalarioAdicional" returnType="void" visibility="package">
+          <Argument type="double" name="salarioAdicional"/>
+        </Method>
+        <Method name="getSalarioAdicional" returnType="double" visibility="package"/>
+        <Method name="setSalarioOtro" returnType="void" visibility="package">
+          <Argument type="Empleado" name="empleado"/>
+          <Argument type="int" name="SalarioBase"/>
+        </Method>
+        <Method name="getSalarioOtro" returnType="double" visibility="package">
+          <Argument type="Empleado" name="empleado"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Empleado" package="altos" visibility="public" xPosition="41.0" yPosition="320.0">
+      <Fields>
+        <Field name="Nombre" type="String" visibility="private"/>
+        <Field name="Apellido" type="String" visibility="private"/>
+        <Field name="salarioBase" type="double" visibility="private"/>
+        <Field name="Puesto" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Nombre"/>
+          <Argument type="String" name="Apellido"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getsalarioBase" returnType="double" visibility="public"/>
+        <Method name="setSalarioBase" returnType="void" visibility="package">
+          <Argument type="double" name="salarioBase"/>
+        </Method>
+        <Method name="setPuesto" returnType="void" visibility="protected">
+          <Argument type="String" name="Puesto"/>
+        </Method>
+        <Method name="getPuesto" returnType="String" visibility="protected"/>
+      </Methods>
+    </Class>
+    <Class name="Principal" package="altos" visibility="public" xPosition="482.0" yPosition="30.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Gerente" package="otros" visibility="public" xPosition="443.0" yPosition="149.0">
+      <Fields>
+        <Field name="area" type="String" visibility="private"/>
+        <Field name="numSubordinados" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Nombre"/>
+          <Argument type="String" name="Apellido"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getArea" returnType="String" visibility="public"/>
+        <Method name="setArea" returnType="void" visibility="public">
+          <Argument type="String" name="area"/>
+        </Method>
+        <Method name="getNumSubordinados" returnType="int" visibility="public"/>
+        <Method name="setNumSubordinados" returnType="void" visibility="public">
+          <Argument type="int" name="numSubordinados"/>
+        </Method>
+        <Method name="getSalarioSubordinado" returnType="double" visibility="public">
+          <Argument type="Operativo" name="operativo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Operativo" package="otros" visibility="public" xPosition="443.0" yPosition="440.0">
+      <Fields>
+        <Field name="turno" type="String" visibility="private"/>
+        <Field name="jornadaLaboral" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Nombre"/>
+          <Argument type="String" name="Apellido"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTurno" returnType="String" visibility="public"/>
+        <Method name="setTurno" returnType="void" visibility="public">
+          <Argument type="String" name="turno"/>
+        </Method>
+        <Method name="getJornadaLaboral" returnType="int" visibility="public"/>
+        <Method name="setJornadaLaboral" returnType="void" visibility="public">
+          <Argument type="int" name="jornadaLaboral"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="serVivo" package="altos" visibility="public" xPosition="803.0" yPosition="170.0">
+      <Methods/>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="otros.Gerente" target="altos.Empleado"/>
+    <UseRelation source="otros.Gerente" target="otros.Operativo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="otros.Operativo" target="altos.Empleado"/>
+    <UseRelation source="altos.Directivo" target="altos.Empleado" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="altos.Directivo" target="altos.Empleado"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="InterfaceCarro">
+  <ClassDiagramComponents>
+    <Class name="Auto" package="" visibility="public" isAbstract="true" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="pasajeros" type="int" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="numSerieMotor"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="pasajeros"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="AutoCompacto" package="" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="numSerieMotor"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="pasajeros"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Camioneta" package="" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="capacidadCarga" type="int" visibility="public"/>
+        <Field name="cantidadEjes" type="int" visibility="public"/>
+        <Field name="cantidadRodadas" type="int" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="numSerieMotor"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="capacidadCarga"/>
+          <Argument type="int" name="cantidadEjes"/>
+          <Argument type="int" name="cantidadRodadas"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="InterfaceCarro" package="" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Pasajeros" package="" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Methods>
+        <Method name="getCantidadPasajeros" returnType="int" visibility="package"/>
+        <Method name="setCantidadPasajeros" returnType="void" visibility="package">
+          <Argument type="int" name="n"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Class name="Vagoneta" package="" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="numSerieMotor"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="int" name="pasajeros"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Vehiculo" package="" visibility="public" isAbstract="true" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="numSerieMotor" type="int" visibility="public"/>
+        <Field name="year" type="int" visibility="public"/>
+        <Field name="marca" type="String" visibility="public"/>
+        <Field name="precio" type="double" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="numSerieMotor"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="double" name="precio"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Auto" target="Vehiculo"/>
+    <IsRelation name="is" source="AutoCompacto" target="Auto"/>
+    <IsRelation name="is" source="Camioneta" target="Vehiculo"/>
+    <IsRelation name="is" source="Vagoneta" target="Auto"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

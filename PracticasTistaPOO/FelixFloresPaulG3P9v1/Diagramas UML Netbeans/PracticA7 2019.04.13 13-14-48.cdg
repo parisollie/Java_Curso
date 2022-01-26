@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="PracticA7">
+  <ClassDiagramComponents>
+    <Class name="Celular" package="" visibility="public" xPosition="974.0" yPosition="357.0">
+      <Fields>
+        <Field name="totalDeCompra" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="claveDeProducto"/>
+          <Argument type="double" name="totalDeCompra"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="estableceCompra" returnType="void" visibility="public">
+          <Argument type="double" name="compra"/>
+        </Method>
+        <Method name="devuelveCompra" returnType="double" visibility="public"/>
+        <Method name="totalAPagar" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Computadora" package="" visibility="public" xPosition="19.0" yPosition="341.0">
+      <Fields>
+        <Field name="totalDeCompra" type="double" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="claveDeProducto"/>
+          <Argument type="double" name="totalDeCompra"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="estableceCompra" returnType="void" visibility="public">
+          <Argument type="double" name="compra"/>
+        </Method>
+        <Method name="devuelveCompra" returnType="double" visibility="public"/>
+        <Method name="totalAPagar" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DispositivoElectronico" package="" visibility="public" isAbstract="true" xPosition="42.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="claveDeProducto"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="devuelveNombre" returnType="String" visibility="public"/>
+        <Method name="setClaveDeCliente" returnType="void" visibility="public">
+          <Argument type="String" name="claveDeProducto"/>
+        </Method>
+        <Method name="devuelveClave" returnType="String" visibility="public"/>
+        <Method name="totalAPagar" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DispositivoMovil" package="" visibility="public" xPosition="1167.0" yPosition="57.0">
+      <Fields>
+        <Field name="totalDeCompra" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="totalDeCompra"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="claveDeProducto"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="estableceCompra" returnType="void" visibility="public">
+          <Argument type="double" name="compra"/>
+        </Method>
+        <Method name="devuelveCompra" returnType="double" visibility="public"/>
+        <Method name="devuelveNombre" returnType="String" visibility="public"/>
+        <Method name="devuelveClave" returnType="String" visibility="public"/>
+        <Method name="totalAPagar" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Laptop" package="" visibility="public" xPosition="72.0" yPosition="584.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="claveDeProducto"/>
+          <Argument type="double" name="totalDeCompra"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="estableceCompra" returnType="void" visibility="public">
+          <Argument type="double" name="compra"/>
+        </Method>
+        <Method name="devuelveCompra" returnType="double" visibility="public"/>
+        <Method name="totalAPagar" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PC" package="" visibility="public" xPosition="572.0" yPosition="596.0">
+      <Fields>
+        <Field name="totalDeCompra" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="claveDeProducto"/>
+          <Argument type="double" name="totalDeCompra"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="estableceCompra" returnType="void" visibility="public">
+          <Argument type="double" name="compra"/>
+        </Method>
+        <Method name="devuelveCompra" returnType="double" visibility="public"/>
+        <Method name="totalAPagar" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Practica7" package="" visibility="public" xPosition="495.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SmartPhone" package="" visibility="public" xPosition="1167.0" yPosition="596.0">
+      <Fields>
+        <Field name="totalDeCompra" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="totalDeCompra"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="claveDeProducto"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="estableceCompra" returnType="void" visibility="public">
+          <Argument type="double" name="compra"/>
+        </Method>
+        <Method name="devuelveCompra" returnType="double" visibility="public"/>
+        <Method name="totalAPagar" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Tablet" package="" visibility="public" xPosition="1451.0" yPosition="357.0">
+      <Fields>
+        <Field name="totalDeCompra" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="claveDeProducto"/>
+          <Argument type="double" name="totalDeCompra"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="estableceCompra" returnType="void" visibility="public">
+          <Argument type="double" name="compra"/>
+        </Method>
+        <Method name="devuelveCompra" returnType="double" visibility="public"/>
+        <Method name="totalAPagar" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Television" package="" visibility="public" xPosition="495.0" yPosition="341.0">
+      <Fields>
+        <Field name="totalDeCompra" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="claveDeProducto"/>
+          <Argument type="double" name="totalDeCompra"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="estableceCompra" returnType="void" visibility="public">
+          <Argument type="double" name="compra"/>
+        </Method>
+        <Method name="devuelveCompra" returnType="double" visibility="public"/>
+        <Method name="totalAPagar" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Laptop" target="Computadora"/>
+    <IsRelation name="is" source="Tablet" target="DispositivoMovil"/>
+    <IsRelation name="is" source="Celular" target="DispositivoMovil"/>
+    <IsRelation name="is" source="DispositivoMovil" target="DispositivoElectronico"/>
+    <IsRelation name="is" source="Computadora" target="DispositivoElectronico"/>
+    <IsRelation name="is" source="PC" target="Computadora"/>
+    <IsRelation name="is" source="Television" target="DispositivoElectronico"/>
+    <IsRelation name="is" source="SmartPhone" target="Celular"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
