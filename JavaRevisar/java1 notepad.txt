@@ -1,0 +1,12 @@
+var insert = function (array,rightdex,value) {
+    var i;
+    for(i=rightdex;i>=0 && array[i] > value ; i--) {
+       array[i+1] = array [i];
+     }
+    array[i+1] = value ;
+};    
+    
+    var array = [3,5,7,11,13,3,9,6]
+    
+    insert array(array ,4,2)
+  
