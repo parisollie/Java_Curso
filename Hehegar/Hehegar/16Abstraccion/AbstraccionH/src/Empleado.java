@@ -1,12 +1,12 @@
 //Subclase
 import javax.swing.JOptionPane;
-//La clase empleado hereda de persona.
+//Paso 4,la clase empleado hereda de persona.
 public class Empleado extends Persona {
-    //Atributos.
+    //Paso 5,le ponemos sus atributos.
     double sueldo;
     String telefono,direccion;
     
-    //Creando constructor.
+    //Paso 6, creando constructor.
     //necesita los mismos atributos que hereda de persona
     public Empleado(String nombre,int edad,double suel,String tel,String dir){
         // para emplear los atributos de otra clase
@@ -19,7 +19,8 @@ public class Empleado extends Persona {
     Al hacer una clase abstracta obligamos al método a sobreescribir.
     No le hereda nada ,le obliga a crear su método para que le ponga de su parte
     */
-    // Sobreescribimos
+    //Paso 7, sobreescribimos con el @Override.
+    //No te gastes el dinero y haz mas de lo que hice de lo heredado.
     @Override 
     public void verDatos(){
         JOptionPane.showMessageDialog(null,"Nombre: " + nombre +"\nEdad: " +

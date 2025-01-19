@@ -3,11 +3,11 @@ import javax.swing.JOptionPane;
 
 
 public class ClasePadre {
-    //Atributos
+    //Paso 1, ponemos los atributos.
     String oficio ="Panadero";
-    //Método
+    //Paso 2, agregamos el método
     public void hagoGalletas(){
-        JOptionPane.showMessageDialog(null,"Soy la Super clase y hago galletas");
+        JOptionPane.showMessageDialog(null,"Soy la Super clase y hago galletas.");
     }
     
 }

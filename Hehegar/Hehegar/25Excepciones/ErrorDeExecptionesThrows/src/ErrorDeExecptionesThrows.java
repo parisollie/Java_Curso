@@ -1,4 +1,4 @@
-//25 Hehegar excepciones throw con metodos
+//25 Hehegar excepciones throw con métodos.
 import javax.swing.JOptionPane;
 
 public class ErrorDeExecptionesThrows {
@@ -16,6 +16,7 @@ public class ErrorDeExecptionesThrows {
             System.out.println(n.getMessage());
         }    
     }
+    
     //Método para sumar
     public static void sumar ()throws NumberFormatException{
         x = Integer.parseInt(JOptionPane.showInputDialog
@@ -35,7 +36,7 @@ public class ErrorDeExecptionesThrows {
             // Lanzamos una nueva excepcion de tipo throw
             throw new ArithmeticException("Error, no se puede dividir entre cero");     
         }else
-            JOptionPane.showMessageDialog(null, "La divicion de " + x + "/" +y+
+            JOptionPane.showMessageDialog(null, "La divición de " + x + "/" +y+
                     " ,es: "+ (x/y),"Mostrando resultado",1);
     }
     

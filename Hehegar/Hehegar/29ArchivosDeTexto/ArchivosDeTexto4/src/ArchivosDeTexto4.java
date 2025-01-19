@@ -7,19 +7,22 @@ public class ArchivosDeTexto4 {
 
     
     public static void main(String[] args) {
-        
+        //Nuestras variables.
         File archivo;
         FileReader leer;
-        //Nuestro contador para que lea los tres
+        //Nuestro contador es para que lea los tres campos.
         int registros =1;
         //Para que almacenemos los datos
         String cadena,nombre = "",dir = "",email = "" ;
         BufferedReader almacenamiento;
+        
         archivo =new File("usuarios.txt");
+        
+        
         try {
             leer = new FileReader(archivo);
             almacenamiento = new BufferedReader(leer);
-            //Inicializamos la cadena de null,para que lea todo
+            //Inicializamos la cadena de null,para que lea todo.
             cadena ="";
             while(cadena!=null){
                 try {
@@ -30,6 +33,7 @@ public class ArchivosDeTexto4 {
                     dir = cadena;
                     cadena = almacenamiento.readLine();
                     email = cadena;
+                    
                     //Si la cadena ya no es nula,entonces mostramos los datos
                     if(cadena!=null){
                         JOptionPane.showMessageDialog(null, "Nombre: " + nombre +

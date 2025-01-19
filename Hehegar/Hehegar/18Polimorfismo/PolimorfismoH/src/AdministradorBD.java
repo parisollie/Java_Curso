@@ -4,8 +4,8 @@ import javax.swing.JOptionPane;
 
 public class AdministradorBD extends Informatico{
     
-    //Utilizando polimorfismp overload (sobrecarga)
-    // Le estoy sobrecargando métodos con argumentos
+    /*Paso 4, Utilizando polimorfismo overload (sobrecarga)
+    Le estoy sobrecargando métodos con argumentos*/
      public void sueldo(double pago){
          JOptionPane.showMessageDialog(null, "El pago es: "+pago);
     }

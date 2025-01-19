@@ -1,13 +1,15 @@
 
 import javax.swing.JOptionPane;
 
-//Polimorfismo override ,responde multiples formas a lo que yo reutilice
+/*Paso 8,Polimorfismo override ,responde a múltiples formas a 
+lo que yo reutilice*/
 public class ProgramadorOverrride extends InformaticosOverride {
-    // Necesito sobreescribir eso a fuerzas
+    // Necesito sobreescribir eso a fuerzas.
     @Override 
     public void sueldo(double pago){
        JOptionPane.showMessageDialog(null, "El pago del programador es:$ "+pago); 
     }
+    
     @Override
     public void verdatos(String nom){
         JOptionPane.showMessageDialog(null, "El nombre del programador es: "+nom); 

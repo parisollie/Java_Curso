@@ -1,22 +1,21 @@
 
 public class Alumno {
     
-    //Atributos
+    //Paso 1, ponemos los atributos
     
-    //Tipo de atributo privado , se puedne obtener mediante el set and get
-    //Para encapsular se pone private
+    /*Tipo de atributo privado,para encapsular se pone private.*/
     private int noControl;
     private String email;
     public String nombre,apellidos;
     
-    //Creando los getters and setters para acceder a los atributos de tipo private
+    //Paso 2, creando los metódos Get and Set para acceder a los atributos de tipo private.
     void setNoControl(int NC){
         this.noControl=NC;
     }
     /*
     Retornara el No de control ,alla arriba en setControl lo va asignar 
     cuando quieran acceder a mis atributos privados 
-    y aqui abajo cuando lo quieran obtener se los das*/
+    y aqui abajo cuando lo quieran obtener se los datos*/
     int getNoControl(){ 
         return noControl;
     }
@@ -27,7 +26,7 @@ public class Alumno {
     String getEmil(){
         return email;
     }
-    //Creando el método para mostrar los datos
+    //Paso 3,creando el método para mostrar los datos.
     
     void verDatos(){
         System.out.println("No. de control: "+noControl);

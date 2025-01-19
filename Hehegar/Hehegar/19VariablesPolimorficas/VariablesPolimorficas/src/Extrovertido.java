@@ -1,9 +1,9 @@
 
 import javax.swing.JOptionPane;
 
-
+//Paso 6
 public class Extrovertido extends Personalidad  {
-    //1 es information message
+     //El número 1 significa : information message.
     @Override
     public void hablar(){
         JOptionPane.showMessageDialog(null,"Hola, que gusto verte !"

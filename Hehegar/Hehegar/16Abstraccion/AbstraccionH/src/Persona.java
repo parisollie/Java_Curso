@@ -1,23 +1,22 @@
 //Super clase
 /* Una clase abastracta contiene al menos un método que no ha sido especificado,
 es decir ,esté será heredado para sobreescribirse.
-*/
-//Haciendo la clase abstracta  para evitar que sea instanciada.
-//Se pone abstract
+Haciendo la clase abstracta ,para evitar que sea instanciada.
+Se pone abstract*/
+
+//Paso 1.
 public abstract class Persona {
-    //Atributos
+    //Atributos.
     String nombre;
     int edad;
     
-    //Creamos sus constructores
+    //Paso 2,creamos su constructor.
     public Persona(String nombre,int edad){ // Le pasamos los parámetros.
         this.nombre = nombre;
         this.edad=edad;
     }
-    //Creando al metodo que no ha sido abstracto
-    /*
-    Si la clase es abtrastacta ,entonces no tiene cuerpo.
-    */
+    /*Paso 3, Creando al metódo abstracto.
+    Si la clase es abtrastacta ,entonces no tiene cuerpo.*/
     abstract public void verDatos();
     
 }

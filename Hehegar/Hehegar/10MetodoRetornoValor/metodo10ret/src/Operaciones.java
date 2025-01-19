@@ -1,9 +1,10 @@
-
+//Metódos para operaciones básicas.
 public class Operaciones {
     
-    //Creamos los atributos
+    //Paso 1,creamos los atributos
     int x,y;
     
+    //Recibe 2 parámetros si tiene int debe retornar algo
     int suma(int x, int y){
         return(x+y);
     }

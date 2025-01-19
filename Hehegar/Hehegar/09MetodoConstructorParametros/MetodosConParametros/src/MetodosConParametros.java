@@ -1,12 +1,13 @@
-//9 Hehegar
+//9-Hehegar
 
 public class MetodosConParametros {
 
     public static void main(String[] args) {
-        //Creando los objetos
+        //Paso 2,ereando los objetos de tipo "Auto".
         Auto primerAuto = new Auto();
         Auto segundoAuto= new Auto();
-        //Le mandamos los parametros a los metodos
+        
+        //Le mandamos los parámetros a los metódos.
         primerAuto.acelerarauto("Ford","Rojo");
         segundoAuto.arrancaruto("Nissan","Turquesa");
     }    

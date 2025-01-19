@@ -1,7 +1,5 @@
-//Super clase
+//Paso 1, Super clase
 public class Personalidad {
-    //Método publico para heredar 
-    public void hablar(){
-        //Todo el mundo habla
-    }
+    //Paso 2,método público para heredar,todo el mundo habla.
+    public void hablar(){}
 }

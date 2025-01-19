@@ -1,18 +1,17 @@
-//Super clase
+//Paso 1, creamos la super clase.
 public class Persona {
     
-    //Atributos
+    //Paso 2, ponemos sus atributos.
     String nombre;
     int edad;
     
-    //Creamos sus constructores
-    // Le pasamos los parámetros que va a heredar la otra clase
+    //Paso 3,creamos su constructor.
+    // Le pasamos los parámetros que va a heredar a la otra clase.
     public Persona(String nombre,int edad){ 
         this.nombre = nombre;
         this.edad=edad;
     }
-    //Método ver datos
-    //Método que no ha sido especificado
+    /*Paso 4,método ver datos, que no ha sido especificado*/
     public void verDatos(){ 
     }
 }

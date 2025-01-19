@@ -18,9 +18,9 @@ public class Herencia2 {
         suel=Double.parseDouble(JOptionPane.showInputDialog(null,
                 "Ingresa el sueldo del empleado: ","Solicitando sueldo: ",3));        
         tel=JOptionPane.showInputDialog(null,
-                "Ingresa el telefono del empleado: ","Solicitando el telefono: ",3);
+                "Ingresa el telefono del empleado: ","Solicitando el teléfono: ",3);
         dir=JOptionPane.showInputDialog(null,
-                "Ingresa la direccion del empleado: ","Solicitando la direccion: ",3); 
+                "Ingresa la direccion del empleado: ","Solicitando la dirección: ",3); 
         
         nomb=JOptionPane.showInputDialog(null,
                 "Ingresa el nombre del empleado no 2: ","Solicitando nombre: ",3); 
@@ -29,9 +29,9 @@ public class Herencia2 {
         sueld=Double.parseDouble(JOptionPane.showInputDialog(null,
                 "Ingresa el sueldo del empleado: ","Solicitando sueldo: ",3));        
         telf=JOptionPane.showInputDialog(null,
-                "Ingresa el telefono del empleado: ","Solicitando el telefono: ",3);
+                "Ingresa el telefono del empleado: ","Solicitando el teléfono: ",3);
         dire=JOptionPane.showInputDialog(null,
-                "Ingresa la direccion del empleado: ","Solicitando la direccion: ",3);
+                "Ingresa la direccion del empleado: ","Solicitando la dirección: ",3);
         
         noms=JOptionPane.showInputDialog(null,
                 "Ingresa el nombre del empleado no 3: ","Solicitando nombre: ",3); 
@@ -40,10 +40,11 @@ public class Herencia2 {
         suels=Double.parseDouble(JOptionPane.showInputDialog(null,
                 "Ingresa el sueldo del empleado: ","Solicitando sueldo: ",3));        
         tels=JOptionPane.showInputDialog(null,
-                "Ingresa el telefono del empleado: ","Solicitando el telefono: ",3);
+                "Ingresa el telefono del empleado: ","Solicitando el teléfono: ",3);
         dirs=JOptionPane.showInputDialog(null,
-                "Ingresa la direccion del empleado: ","Solicitando la direccion: ",3);
+                "Ingresa la direccion del empleado: ","Solicitando la dirección: ",3);
         
+        //Paso 8,ponemos los objeto empleado.
         Empleado emp1 = new Empleado(nom,edad,suel,tel,dir);
         Empleado emp2 = new Empleado(nomb,eda,sueld,telf,dire);
         Empleado emp3 = new Empleado(noms,edads,suels,tels,dirs);

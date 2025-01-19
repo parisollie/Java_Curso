@@ -1,20 +1,13 @@
 
 public class Alumnos {
 
-    //Atributos
+    //Paso 1, Atributos.
     int noControl;
     String nombre,apellidos;
-    //Creando metodo constructor ,construye e inicializa los atributos de la clase
-    //Recibiendo los parametros
-    //Si mi clase se llama Alumnos asi se llama mi constructor
-    //Siempre van en orden los parametros
+   
+    //Paso 2, creamos el constructor.
     Alumnos(int nC,String nom,String ape){
         //Inicializando los atributos
-        /*
-        noControl =nC;
-        nombre = nom;
-        apellidos = ape;
-        */
         
         //otraforma
         this.noControl=nC;
@@ -22,19 +15,21 @@ public class Alumnos {
         this.apellidos=ape;
         
     }
-    //Metodos
+    //Paso 3, ponemos los metódos.
     void verDatos(){
         System.out.println("No. Control "+ noControl);
         System.out.println("Nombre: "+ nombre);
         System.out.println("Apellidos: "+ apellidos);
+        System.out.println("----------------------");
     }
-    //Creando los metodos get and set
-    //Obtengo el numero de control
-    //Los get retornan 
+    /*Paso 4, Creando los metódos get and set.
+     -Obtengo el numero de control.
+     -Los get retornan. */
+    
     int getControl(){ 
         return this.noControl;
     }
-    //Para obtener el nombre
+    //Para obtener el nombre.
     String getNombre(){
         return this.nombre;
     }
@@ -42,15 +37,14 @@ public class Alumnos {
         return this.apellidos;
     }
     
-    //Creando sets ,casi no deuelven nada
-    //Recibe parametros
+    //Creando sets ,casi no deuelven nada, por eso son void.
+    //Recibe parámetros.
     void setControl(int NC){
-        //Estamos asignando
+        //Estamos asignando.
         this.noControl=NC;
         
     }
     void setControl(String NOM){
-        //Estamos asignando
         this.nombre=NOM;
     }
     void setApelldos(String AP){

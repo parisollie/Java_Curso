@@ -3,6 +3,7 @@ import java.io.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+
 /*
 (Algoritmo para leer un archivo en Java.
 1.-Declarar una variable de tipo File.
@@ -19,48 +20,42 @@ import javax.swing.JOptionPane;
    mostrar su contenido.
 9.-Cerrar el buffer.
 10.-Cerrar el lector.
-
-
 */
+
 public class ArchivosDeTexto2 {
 
     public static void main(String[] args) {
         
         try {
-            //Paso 1
-            //Variabale para manipular al archivo.
+            //Paso 1,variabale para manipular al archivo.
             File miArchivo;
-            //Paso 2
-            //Variabale para leer.
+            //Paso 2,variabale para leer.
             FileReader leer;
-            //Paso 3
-            //Para ir recuperando las cadenas de texto de nuestro archivo.
+            //Paso 3,para ir recuperando las cadenas de texto de nuestro archivo.
             String cadena;
-            //Paso 4 , le pasamos el nombre del archivo
+            //Paso 4,le pasamos el nombre del archivo.
             miArchivo = new File("RequisitosLectura.txt");
             String cads="";
-            
             //Paso 5
             leer = new FileReader(miArchivo);
-            //Paso 6
-            //Almacena todo lo que lee el bufferReader.
-            // Le pasamos como parámetro la variable de tipo fileReader.
+            /*Paso 6
+            El bufferReader = Almacena todo lo que lee.
+            Le pasamos como parámetro la variable de tipo fileReader.*/
             BufferedReader almacenamiento = new BufferedReader(leer);
-            //Paso 7
-            //La inicializamos en null,ya que la cadena se almacenara y al final todo será null.
+            
+            /*Paso 7 ,la inicializamos en null,ya que la cadena se almacenara 
+            y al final todo será null.*/
             cadena = "";
-            // Paso 8
-            //Hasta que me lea todo
+            // Paso 8,Hasta que me lea todo.
             while(cadena!=null){
                 try {
-                    //Paso 8.1
-                    //Qué me almacene una línea de texto.
+                    //Paso 8.1,que me almacene una línea de texto y se lo asignamos a cadena.
                     cadena = almacenamiento.readLine();
                     //8.2
                     if (cadena!= null){
-                        //Mostramos la cadena
+                        //Mostramos la cadena.
                         System.out.println(cadena);
-                        // Alcenandome la primera línea.
+                        // Alcenando la primera línea.
                         cads = cads +  cadena + "\n"; 
                     }
                 } catch (IOException ex) {
@@ -69,8 +64,7 @@ public class ArchivosDeTexto2 {
             }
             JOptionPane.showMessageDialog(null,cads,"Mostrando los datos del archivo ",1);
             try {
-                //Paso 9,cierra el buffer
-                // Cada vez que cierra se necesitan los try-catch
+                //Paso 9,cierra el buffer,cada vez que cierra se necesitan los try-catch
                 almacenamiento.close();
                 //Paso 10
                 leer.close();

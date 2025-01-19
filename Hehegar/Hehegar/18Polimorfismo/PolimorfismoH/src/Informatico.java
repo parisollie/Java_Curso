@@ -1,7 +1,7 @@
 
 public class Informatico {
     
-    //Creando métodos del informático
+    //Paso 1,creando métodos del informático.
     public void sueldo(){    
     }
     

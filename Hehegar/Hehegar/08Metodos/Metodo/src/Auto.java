@@ -1,18 +1,21 @@
-//Creamos los metodos que tiene un auto
+//Paso 1,creamos los metódos que tiene un auto.
+
 public class Auto {
-    //1 er metodo,nuestra funcion se llama "arrancarauto"
-    //El void no retorna nada
+    /*1er metódo,nuestra función se llama "arrancarauto"
+    El void no retorna nada.*/
     void arrancaruto(){
-        System.out.println("El Auto arrancando");
+        System.out.println("El auto arrancando.");
     }
-    //2 do metodo
+    //2do metódo
     void apagarauto(){
-        System.out.println("El auto se apago");
+        System.out.println("El auto se apago.");
     }
+    //3er metódo.
     void acelerarauto(){
-        System.out.println("El auto esta acelerando");
+        System.out.println("El auto esta acelerando.");
     }
+    //4to metódo.
     void frenarauto(){
-        System.out.println("El auto freno");
+        System.out.println("El auto freno.");
     }
 }

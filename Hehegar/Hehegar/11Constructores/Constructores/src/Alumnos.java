@@ -1,12 +1,13 @@
 
 public class Alumnos {
-    //Atributos
+    //Paso 1,ponemos atributos.
     int noControl;
     String nombre,apellidos;
-    //Creando metodo constructor ,construye e inicializa los atributos de la clase
-    //Recibiendo los parametros
-    //Si mi clase se llama Alumnos asi se llama mi constructor
-    //Siempre van en orden los parametros
+    
+    /*Paso 2,creando metódo constructor ,construye e inicializa los atributos de la clase
+    Recibiendo los parámetros.
+    -Si mi clase se llama "Alumnos" así se llama mi constructor.
+   - Siempre van en orden los parámetros*/
     Alumnos(int nC,String nom,String ape){
         //Inicializando los atributos
         /*
@@ -15,17 +16,19 @@ public class Alumnos {
         apellidos = ape;
         */
         
-        //otraforma
+        //otra forma de hacer el constructor.
+        
         this.noControl=nC;
         this.nombre=nom;
         this.apellidos=ape;
         
     }
-    //Metodos
+    //Paso 3, ponemos los metoódos.
     void verDatos(){
         System.out.println("No. Control "+ noControl);
         System.out.println("Nombre: "+ nombre);
         System.out.println("Apellidos: "+ apellidos);
+        System.out.println("----------------------------");
     }
     
 }

@@ -1,11 +1,12 @@
 //Super clase
+
 /* Una clase abastracta contiene al menos un método que no ha sido especificado,
 es decir ,este sera heredado para sobreescribirse
 */
-//Haciendo la clase abstracta  para evtar que sea instanciada
+//Haciendo la clase abstracta  para evitar que sea instanciada
 public abstract class Persona {
-    //Atributos
     
+    //Atributos.
     String nombre;
     int edad;
     

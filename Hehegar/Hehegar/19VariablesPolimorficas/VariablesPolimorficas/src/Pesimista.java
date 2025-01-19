@@ -1,9 +1,9 @@
 
 import javax.swing.JOptionPane;
 
-
+//Paso 4
 public class Pesimista extends Personalidad {
-    //1 es information message
+     //El número 1 significa : information message.
     @Override
     public void hablar(){
         JOptionPane.showMessageDialog(null,"Seguro hoy"

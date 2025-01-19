@@ -1,5 +1,17 @@
 
 //18 Hehegar -Polimorfismo overload y override
+
+/*
+
+El polimorfismo se divide en 2:
+
+Overload(Sobrecarga) = Con respuesta de acuerdo a los parámetros pudiendo agregar 
+o quitar parámetros.
+
+Override(sobre-escritura) = Polimorfismo sobre escribiendo los métodos heredados
+tal cual,no se le pueden poner ni quitar.
+
+*/
 import javax.swing.JOptionPane;
 
 
@@ -7,15 +19,18 @@ public class PolimorfismoH {
 
     
     public static void main(String[] args) {
-        //Objeto de tipo Programador
+        
+        //Paso-5, creamos los objeto de tipo Programador
         Programador p1 = new Programador();
         Analsta an1= new Analsta ();
         AdministradorBD bd1 = new AdministradorBD ();
+        
+        //Paso 9,Overrides
         ProgramadorOverrride p2 = new ProgramadorOverrride();
         AnalistaOverride an2 = new AnalistaOverride ();
         AdministradorBDOverride bd2 = new AdministradorBDOverride ();
         
-        JOptionPane.showMessageDialog(null,"Aqui comienza Polimorfismo Overload");
+        JOptionPane.showMessageDialog(null,"Aquí comienza Polimorfismo Overload");
         
         p1.verdatos("Juanito","Galvan");
         //24 hrs y 100 pesos
@@ -30,9 +45,9 @@ public class PolimorfismoH {
         
         bd1.sueldo(4500);
         bd1.verdatos("Paul");
-        bd1.labores("Administrador BD");
+        bd1.labores("Creador de apps móviles.");
         
-        JOptionPane.showMessageDialog(null,"Aqui comienza Polimorfismo Overrride");
+        JOptionPane.showMessageDialog(null,"Aquí comienza Polimorfismo @Overrride");
         
         p2.verdatos("Daz");
         p2.sueldo(2400);

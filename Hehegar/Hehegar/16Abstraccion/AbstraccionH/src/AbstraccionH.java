@@ -22,8 +22,8 @@ public class AbstraccionH {
         Empleado emp3 = new Empleado(nom,edad,suel,tel,dir);
         
         */
-        
-        //Estatico
+         
+        //Paso 8,Estático
         Empleado emp1 = new Empleado("Rafel Ramo ",23,5000,"16728362","Miami #18");
         Empleado emp2= new Empleado("Nick Bransby ",25,9000,"987654321","Inglaterra #18");
         Empleado emp3= new Empleado("Ivan Moreno ",21,1000,"22222","Los Mochis #542");
