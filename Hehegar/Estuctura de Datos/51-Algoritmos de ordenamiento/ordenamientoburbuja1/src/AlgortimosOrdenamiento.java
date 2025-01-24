@@ -194,14 +194,43 @@ public class AlgortimosOrdenamiento {
         mostrarArreglo(arreglo);
     }
 
-    // ---------------------Metodo Mezcla directa--------------------------------
+    // ---------------------- Método Intercalacion------------------------------
+
+    public void intercalacion(int[] arregloA, int[] arregloB) {
+        int i, j, k;
+        int arregloC[] = new int[arregloA.length + arregloB.length];
+
+        // repetir mientras los arreglos A Y B, tengan elementos que comparar.
+        for (i = j = k = 0; i < arregloA.length && j < arregloB.length; k++) {
+            if (arregloA[i] < arregloB[j]) {
+                arregloC[k] = arregloA[i];
+                i++;
+            } else {
+                arregloC[k] = arregloB[j];
+                j++;
+            }
+        }
+        // Para añadir los elementos del arregloA sobrantes en caso de haberlo.
+        for (; i < arregloA.length; i++, k++) {
+            arregloC[k] = arregloA[i];
+        }
+        // Para añadir los elementos del arregloA sobrantes en caso de haberlo.
+        for (; j < arregloB.length; j++, k++) {
+            arregloC[k] = arregloB[i];
+        }
+        System.out.println("Arreglos ordenados por interclacion");
+        mostrarArreglo(arregloC);
+    }
+
+    // ---------------------Método Mezcla directa--------------------------------
 
     public int[] mezclaDirecta(int[] arreglo) {
         int i, j, k;
-        // Validamos si el arreglo es tamaño 1 o 0,
-        // Válidamos si el arreglo es tamaño 1 o 0...si un arreglo es de tamaño 0 o 1
-        // quiere decir que ya esta ordenado
-        // Que si hay algo que ordenar
+        /*
+         * Validamos si el arreglo es tamaño 1 o 0,
+         * Válidamos si el arreglo es tamaño 1 o 0...
+         * si un arreglo es de tamaño 0 o 1, quiere decir que ya esta ordenado
+         */
         if (arreglo.length > 1) {
             // Con esto sabemos de que tamaño es la sublista izq
             int nElementosIzq = arreglo.length / 2;
@@ -213,26 +242,23 @@ public class AlgortimosOrdenamiento {
             int arregloDer[] = new int[nElementosDer];
 
             // Copiando los elementos de parte primera a al arreglo Izq
-
             for (i = 0; i < nElementosIzq; i++) {
                 arregloIzq[i] = arreglo[i];
                 // Para copiar la sublista izq a nuestro arreglo
-                System.out.print(arregloIzq[i] + "-");
+                // System.out.print(arregloIzq[i] + "-");
             }
-            // Copiando los elementos de parte primera a al arreglo Der
-
+            // Copiando los elementos de parte segunda a al arreglo Der
             for (i = nElementosIzq; i < nElementosIzq + nElementosDer; i++) {
-                // Recordando que nos recorreran -os indices
+                // Recordando que nos recorreran los indices
                 arregloDer[i - nElementosIzq] = arreglo[i];
-                System.out.print(arregloDer[i - nElementosIzq] + "**");
+                // System.out.print(arregloDer[i - nElementosIzq] + "**");
             }
 
-            System.out.print("\n");
-            // Recursividad.Mezcla Directa es un metodo Recursivo
+            // System.out.print("\n");
+            // Recursividad.Mezcla Directa es un método Recursivo
             arregloIzq = mezclaDirecta(arregloIzq);
             arregloDer = mezclaDirecta(arregloDer);
             // Para ordenar
-
             i = 0;
             j = 0;
             k = 0;
@@ -240,15 +266,15 @@ public class AlgortimosOrdenamiento {
             // arregloIzq.length (su medida) y
             while (arregloIzq.length != j && arregloDer.length != k) {
                 // if(arregloIzq[j]>arregloDer[k]){ Descendente
-                if (arregloIzq[j] > arregloDer[k]) {
+                if (arregloIzq[j] < arregloDer[k]) {
 
                     arreglo[i] = arregloIzq[j];
-                    System.out.print(arreglo[i] + " ");
-                    ++i;
-                    ++j;
+                    // System.out.print(arreglo[i] + " ");
+                    i++;
+                    j++;
                 } else {
                     arreglo[i] = arregloDer[k];
-                    System.out.print(arreglo[i] + " ");
+                    // System.out.print(arreglo[i] + " ");
                     i++;
                     k++;
                 }
@@ -256,10 +282,9 @@ public class AlgortimosOrdenamiento {
             } // Fin while
 
             // Arreglo Final,uniendo las sublistas
-
             while (arregloIzq.length != j) {
                 arreglo[i] = arregloIzq[j];
-                System.out.print(arreglo[i] + " ");
+                // System.out.print(arreglo[i] + " ");
                 i++;
                 j++;
             }
@@ -268,11 +293,11 @@ public class AlgortimosOrdenamiento {
             while (arregloDer.length != k) {
                 arreglo[i] = arregloDer[k];
                 // Imprime el arreglo fusinado
-                System.out.println(arreglo[i] + " ");
+                // System.out.println(arreglo[i] + " ");
                 i++;
                 k++;
             }
-            System.out.println("\n");
+            // System.out.println("\n");
         } // Fin de if principal
         return arreglo;
     }
@@ -285,7 +310,6 @@ public class AlgortimosOrdenamiento {
             ordenado = true;
             // Se va estar repetiendo por eso la inicializamos en cero
             izquierda = 0;
-
             // Tenemos que ver que los elementos esten ordenaos en tuplas
             while (izquierda < derecha) {
                 izq = izquierda;
@@ -295,12 +319,11 @@ public class AlgortimosOrdenamiento {
                 }
                 der = izq + 1;
                 // Va ir buscando los que ya esten ordenados
-                while (der == derecha - 1 || der < derecha && arreglo[der] < arreglo[der + 1]) {
+                while (der == derecha - 1 || der < derecha && arreglo[der] <= arreglo[der + 1]) {
                     der++;
                 }
-                // Para la fusion
-                // Quiere decir que hay que mandar a ordenar
-                if (der >= derecha) {
+                /* Para la fusion quiere decir que hay que mandar a ordenar */
+                if (der <= derecha) {
                     // se lo mandamos para que ordene
                     mezclaDirecta2(arreglo);
                     ordenado = false;
@@ -308,114 +331,123 @@ public class AlgortimosOrdenamiento {
                 izquierda = izq;
             }
             // !ordenado la negacion de ordenado
-
         } while (!ordenado);
     }
 
     // ---------------------Metodo Mezcla directa 2-----------------------------
     public void mezclaDirecta2(int[] arreglo) {
         int i, j, k;
-        // Validamos si el arreglo es tamaño 1 o 0
-        // Que si hay algo que ordenar
+        /*
+         * Validamos si el arreglo es tamaño 1 o 0,
+         * Válidamos si el arreglo es tamaño 1 o 0...
+         * si un arreglo es de tamaño 0 o 1, quiere decir que ya esta ordenado
+         */
         if (arreglo.length > 1) {
             // Con esto sabemos de que tamaño es la sublista izq
             int nElementosIzq = arreglo.length / 2;
             int nElementosDer = arreglo.length - nElementosIzq;
+
             // Este arreglo izq tiene los elementos de la sublista izq
             int arregloIzq[] = new int[nElementosIzq];
             // Este arreglo izq tiene los elementos de la sublista der
             int arregloDer[] = new int[nElementosDer];
 
             // Copiando los elementos de parte primera a al arreglo Izq
-
             for (i = 0; i < nElementosIzq; i++) {
-                // Para copiar la sublista izq a nuestro arreglo
                 arregloIzq[i] = arreglo[i];
+                // Para copiar la sublista izq a nuestro arreglo
+                // System.out.print(arregloIzq[i] + "-");
             }
-            // Copiando los elementos de parte primera a al arreglo Der
-
+            // Copiando los elementos de parte segunda a al arreglo Der
             for (i = nElementosIzq; i < nElementosIzq + nElementosDer; i++) {
+                // Recordando que nos recorreran los indices
                 arregloDer[i - nElementosIzq] = arreglo[i];
+                // System.out.print(arregloDer[i - nElementosIzq] + "**");
             }
-            // Recursividad
+
+            // System.out.print("\n");
+            // Recursividad.Mezcla Directa es un método Recursivo
             arregloIzq = mezclaDirecta(arregloIzq);
             arregloDer = mezclaDirecta(arregloDer);
-
             // Para ordenar
-
             i = 0;
             j = 0;
             k = 0;
-
-            /*
-             * indice j para izq,indice k para der, i para
-             * arreglo ori)
-             */
-
+            /* indice j para izquierdo,indice k para derecho, i para arreglo original */
+            // arregloIzq.length (su medida) y
             while (arregloIzq.length != j && arregloDer.length != k) {
-
+                // if(arregloIzq[j]>arregloDer[k]){ Descendente
                 if (arregloIzq[j] < arregloDer[k]) {
+
                     arreglo[i] = arregloIzq[j];
+                    // System.out.print(arreglo[i] + " ");
                     i++;
                     j++;
                 } else {
                     arreglo[i] = arregloDer[k];
+                    // System.out.print(arreglo[i] + " ");
                     i++;
                     k++;
                 }
 
             } // Fin while
-              // Arreglo Final,uniendo las sublistas
+
+            // Arreglo Final,uniendo las sublistas
             while (arregloIzq.length != j) {
                 arreglo[i] = arregloIzq[j];
+                // System.out.print(arreglo[i] + " ");
                 i++;
                 j++;
             }
+
             // Para ala parte derecha
             while (arregloDer.length != k) {
                 arreglo[i] = arregloDer[k];
+                // Imprime el arreglo fusinado
+                // System.out.println(arreglo[i] + " ");
                 i++;
                 k++;
             }
-
+            // System.out.println("\n");
         } // Fin de if principal
-
     }
 
-    // -----------------------Busqueda Secuencial------------------------------
-    // Recibe el arreglo y aparte recibimos el arreglo a buscar
+    // -----------------------Búsqueda Secuencial------------------------------
+    // Recibe el arreglo y aparte recibimos el arreglo a buscar.
 
     public int busquedasecuencial(int arreglo[], int elemento) {
 
         int i;
         boolean encontrado = false;
         for (i = 0; i < arreglo.length && encontrado == false; i++) {
-            // Quiere decir que ya lo encontro
+            // Quiere decir que ya lo encontró.
             if (elemento == arreglo[i]) {
                 encontrado = true;
-                // Lo tenemos en i ,asi que lo retornamos
+                // Lo tenemos en i ,así que lo retornamos.
                 return i;
             }
         }
-        // La posicion -1 no existe ,quiere decir que no fue encontrado
+        // La posicion -1 no existe ,quiere decir que no fue encontrado.
         return -1;
     }
 
-    // --------------------- Metodo busqueda Binaria-----------------------------
+    // --------------------- Método búsqueda Binaria-----------------------------
     public int busquedabinaria(int arreglo[], int elemento) {
         int centro, primero, ultimo, valorCentro;
-        // indices
+        // índices
         primero = 0;
         // si nuestro arreglo tienen 10 elementos ,sera de 0-9
         ultimo = arreglo.length - 1;
-
+        // Mientras primero sea menor o igual al ultimo harás lo siguiente
         while (primero <= ultimo) {
+            // Divicion para calcular la mitad de nuestros elementos
             centro = (primero + ultimo) / 2;
+            // Entonces calculamos el índice centro.
             valorCentro = arreglo[centro];
             System.out.println("Comparando a " + elemento + " Con " + arreglo[centro]);
-            // Quiere decir que ya lo encontro
+            // Quiere decir que ya lo encontró
             if (elemento == valorCentro) {
-                // El indice se almacena en centro
+                // El índice se almacena en centro
                 return centro;
             } else if (elemento < valorCentro) {
                 // Con el fin de desplazarnos hacia la izq
@@ -424,9 +456,7 @@ public class AlgortimosOrdenamiento {
             } else {
                 // desplazarnos hacia la derecha
                 primero = centro + 1;
-
             }
-
         }
         // ya lo tenemos
         return -1;
@@ -445,4 +475,5 @@ public class AlgortimosOrdenamiento {
         }
         System.out.println();
     }
+
 }

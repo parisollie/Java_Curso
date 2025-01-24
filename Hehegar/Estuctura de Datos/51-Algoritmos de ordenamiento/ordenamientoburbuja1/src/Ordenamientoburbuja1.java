@@ -8,7 +8,7 @@ public class Ordenamientoburbuja1 {
 
         //
         int vector1[] = { 5, 6, 3, 44, 22, 1 };
-        int vector2[] = { 51895, 1114, 2243, 2143, 2231, 1982 };
+        int vector2[] = { 55, 4, 43, 2, 10, 4567, 638, 3, 0, -5, -9 };
         int vector3[] = { 5, 2, 1, 8, 3, 9, 7 };
 
         // ------------------------- Método Burbuja -----------------------------
@@ -58,61 +58,66 @@ public class Ordenamientoburbuja1 {
 
         // ------------------------Método shell.----------------------------
 
-        System.out.println("Arreglo original");
-        ordenar.mostrarArreglo(vector3);
-        ordenar.shell(vector3);
+        // System.out.println("Arreglo vector 1 original");
+        // ordenar.mostrarArreglo(vector1);
+        // ordenar.shell(vector3);
 
-        /*
-         * ordenar.mostrarArreglo(vector2);
-         * //el 10 es el numero a encontrar
-         * int indice=ordenar.busquedabinaria(vector2, 11);
-         * 
-         * if(indice!=-1){ // que no lo encontro el -1
-         * System.out.println("Elemento 10 encontrado en el indice "+indice);
-         * 
-         * }else{
-         * System.out.println("Elemento 10 no encontrado");
-         * }
-         */
-        /*
-         * ordenar.mostrarArreglo(vector2);
-         * int indice=ordenar.busquedasecuencial(vector2, 43);//Mi metodo de busqueda
-         * secuencial retorna un entero //int indice...
-         * if(indice !=-1){ // si es -1 es logico que si lo encontro
-         * System.out.println("Elemento 43 encontrado en el indice-"+indice);
-         * }else{
-         * System.out.println("Elemento 43 no encontrado ");
-         * }
-         */
+        // ------------------------Método inserción.----------------------------
 
-        /*
-         * mezcla directa
-         * System.out.println("Arreglo vector2 Original: ");
-         * ordenar.mostrarArreglo(vector1);
-         * 
-         * System.out.println("\nArreglo original con Mezcla directa: \n");
-         * vector1=ordenar.mezclaDirecta(vector1);// En el vector 2 se guarda lo que me
-         * devuelva mezcla directa
-         * 
-         * ordenar.mostrarArreglo(vector1);
-         * 
-         * 
-         */
-        /*
-         * Mezcla Natural
-         * System.out.println("Arreglo vector2 Original: ");
-         * ordenar.mostrarArreglo(vector1);
-         * System.out.println("Arreglo original con Mezcla Natural");
-         * ordenar.mezclaNatural(vector1);
-         * ordenar.mostrarArreglo(vector1);
-         */
+        // System.out.println("Arreglo vector 1 original");
+        // ordenar.mostrarArreglo(vector1);
 
-        /*
-         * Radix
-         * System.out.println("Radix");
-         * System.out.println("Arreglo Orginal");
-         * ordenar.mostrarArreglo(vector2); //Para que me muestre el vector original
-         * ordenar.radix(vector2);
-         */
+        // System.out.println("Arreglo vector 3 original");
+        // ordenar.mostrarArreglo(vector3);
+
+        // ordenar.burbuja1(vector1);
+        // ordenar.burbuja1(vector3);
+        // ordenar.intercalacion(vector1, vector3);
+
+        // ------------------------Mézcla directa.----------------------------
+
+        // // mezcla directa
+        // System.out.println("Arreglo vector1 Original: ");
+        // ordenar.mostrarArreglo(vector2);
+
+        // System.out.println("Arreglo original con Mezcla directa: ");
+        // // En el vector 2 se almacena y le digo que me lo guarde en vector2
+        // vector2 = ordenar.mezclaDirecta(vector2);
+        // // devuelva mezcla directa
+        // ordenar.mostrarArreglo(vector2);
+
+        // ------------------------Mézcla Natural.----------------------------
+
+        // Mezcla Natural
+        // System.out.println("Arreglo vector2 Original: ");
+        // ordenar.mostrarArreglo(vector2);
+        // System.out.println("Arreglo original con Mezcla Natural");
+        // ordenar.mezclaNatural(vector2);
+        // ordenar.mostrarArreglo(vector2);
+
+        // ---------------------Búsqueda secuencual.----------------------------
+        // ordenar.mostrarArreglo(vector2);
+        // int indice = ordenar.busquedasecuencial(vector2, -9);
+        // if (indice != -1) {
+        // System.out.println("Elemento encontrado en el indice : " + indice);
+        // } else {
+        // System.out.println("Elemento no encontradp");
+        // }
+
+        // ---------------------Búsqueda Binaria.----------------------------
+
+        ordenar.mostrarArreglo(vector2);
+        ordenar.mezclaNatural(vector2);
+        ordenar.mostrarArreglo(vector2);
+        // el 10 es el numero a encontrar
+        int indice = ordenar.busquedabinaria(vector2, -9);
+
+        if (indice != -1) { // que no lo encontro el -1
+            System.out.println("Elemento encontrado en el indice: " + indice);
+
+        } else {
+            System.out.println("Elemento no encontrado");
+        }
+
     }
 }
